@@ -1,8 +1,10 @@
-@objc(SwiftUiStarter)
-class SwiftUiStarter: NSObject {
+import SwiftUI
 
-    @objc(multiply:withB:withResolver:withRejecter:)
-    func multiply(a: Float, b: Float, resolve:RCTPromiseResolveBlock,reject:RCTPromiseRejectBlock) -> Void {
-        resolve(a*b)
+@available(iOS 14.0, *)
+@objc(SwiftUIStarter)
+class SwiftUIProxy: RCTViewManager {        
+    override func view() -> UIView {
+        let vc = UIHostingController(rootView: SwiftUIComponent())
+        return vc.view
     }
 }

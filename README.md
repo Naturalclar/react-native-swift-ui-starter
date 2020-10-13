@@ -2,21 +2,10 @@
 
 Starterkit for creating SwiftUI component for React Native
 
-## Installation
+Used the following site as a reference
 
-```sh
-npm install react-native-swift-ui-starter
-```
-
-## Usage
-
-```js
-import SwiftUiStarter from "react-native-swift-ui-starter";
-
-// ...
-
-const result = await SwiftUiStarter.multiply(3, 7);
-```
+- https://medium.com/better-programming/react-native-meets-swiftui-d1606a8e1681
+- https://teabreak.e-spres-oh.com/swift-in-react-native-the-ultimate-guide-part-2-ui-components-907767123d9e
 
 ## Contributing
 

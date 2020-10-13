@@ -1,9 +1,9 @@
-import { NativeModules } from 'react-native';
+import { HostComponent, requireNativeComponent } from 'react-native';
 
-type SwiftUiStarterType = {
-  multiply(a: number, b: number): Promise<number>;
-};
+type SwiftUIComponentProps = {};
 
-const { SwiftUiStarter } = NativeModules;
+const SwiftUIStarter = requireNativeComponent(
+  'SwiftUIStarter'
+) as HostComponent<SwiftUIComponentProps>;
 
-export default SwiftUiStarter as SwiftUiStarterType;
+export default SwiftUIStarter;
